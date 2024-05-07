@@ -1,0 +1,43 @@
+@import url(style2.css);
+@import url(style2.css) print;
+
+h1, h2 {
+    font-family: "Bebas Neue";
+    font-size: 2vw;
+}
+
+.paragraph1{
+    text-transform: capitalize;
+    text-indent: 4rem;
+    word-spacing: 1rem;
+}
+
+.paragraph2{
+    
+    text-shadow: 5px 5px #000000;   
+    text-transform: uppercase;
+    
+}
+
+.container {
+    width: 20vw;
+    height: 20vh;
+    background-color: red;
+    word-wrap: break-word;
+    text-overflow: clip;
+    overflow: scroll;
+}
+
+.container1{
+    display: flex;
+}
+
+@media print {
+    h1, h2{
+        font-size: 50px;
+        background-color: red;
+        }
+        p{
+            display: none;
+        }
+}
